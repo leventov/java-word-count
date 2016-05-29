@@ -1,0 +1,28 @@
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath 'gradle.plugin.me.champeau.gradle:jmh-gradle-plugin:0.3.0'
+    }
+}
+
+apply plugin: 'me.champeau.gradle.jmh'
+
+dependencies {
+    compile 'org.openjdk.jmh:jmh-core:1.12'
+    jmh 'org.openjdk.jol:jol-core:0.5'
+    jmh 'net.sf.trove4j:trove4j:3.0.3'
+    jmh 'it.unimi.dsi:fastutil:7.0.12'
+    jmh 'org.eclipse.collections:eclipse-collections:7.1.0'
+    jmh 'com.carrotsearch:hppc:0.7.1'
+    jmh 'com.github.vsonnier:hppcrt:0.7.4'
+    jmh 'com.koloboke:koloboke-api-jdk6-7:1.0.0'
+    jmh 'com.koloboke:koloboke-impl-jdk6-7:1.0.0'
+    jmh 'com.koloboke:koloboke-compile:0.5'
+    jmh 'com.google.auto.value:auto-value:1.2'
+    jmh 'com.google.guava:guava:19.0'
+}
