@@ -22,7 +22,7 @@ dependencies {
     jmh 'com.github.vsonnier:hppcrt:0.7.4'
     jmh 'com.koloboke:koloboke-api-jdk6-7:1.0.0'
     jmh 'com.koloboke:koloboke-impl-jdk6-7:1.0.0'
-    jmh 'com.koloboke:koloboke-compile:0.5'
+    jmh 'com.koloboke:koloboke-compile:0.5.1'
     jmh 'com.google.auto.value:auto-value:1.2'
     jmh 'com.google.guava:guava:19.0'
 }
